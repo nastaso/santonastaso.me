@@ -6,86 +6,82 @@ module.exports = {
     imageCDN: false,
   }),
   siteMetadata: {
-    siteUrl: `https://santonastaso.codes/`,
+    siteUrl: `https://santonastaso.me/`,
     name: 'Alex Santonastaso',
     title: `Alex Santonastaso - Software Engineer`,
-    description: `Software Engineer · Python · Cloud · Full-Stack`,
+    description: `Software Engineer · Full-Stack`,
     author: `Alex Santonastaso`,
-    keywords: `Alex Santonastaso, software engineer, developer, portfolio, Python, automation, web development, React, Gatsby, computer science, data science, AWS, Terraform, FastAPI`,
-    github: `https://github.com/snts42`,
+    keywords: `Alex Santonastaso, software engineer, developer, portfolio, Python, TypeScript, automation, web development, React, Gatsby, FastAPI, AWS, Terraform, Supabase`,
+    github: `https://github.com/nastaso`,
     linkedin: `https://www.linkedin.com/in/alex-santonastaso/`,
     resume: "/Alex-Santonastaso-CV.pdf",
-    about: `Software Engineer with a background in Computer Science and Big Data Science. Experienced in building automation tools, web applications, and cloud infrastructure using Python and modern frameworks. I have a strong understanding of APIs, cloud services, and DevOps practices. I enjoy solving real world problems through efficient, maintainable code.`,
-    email: "alex@santonastaso.com",
+    about: `Software Engineer with a background in Computer Science and Big Data Science. Experienced in building full-stack web applications, automation tools, and cloud infrastructure with Python, TypeScript, FastAPI, React, and AWS. Strong on APIs, cloud services, and DevOps practices. I enjoy solving real-world problems through efficient, maintainable code.`,
+    email: "alex@santonastaso.me",
     projects: [
       {
+        name: 'CloudCertPrep',
+        description: 'Free AWS certification practice exam platform. React, Supabase.',
+        link: 'https://cloudcertprep.io',
+        featured: true,
+      },
+      {
+        name: 'E-volve SecureAssess Results Automation',
+        description: 'Windows tool that scrapes City & Guilds exam results. Python, Selenium.',
+        link: 'https://github.com/nastaso/evolve-results-automation',
+      },
+      {
         name: 'Secure File Sharing',
-        description: 'Full-stack web application built with FastAPI, Gatsby, AWS, and Terraform',
-        link: 'https://files.santonastaso.codes',
+        description: 'Full-stack secure file sharing with presigned uploads. FastAPI, AWS.',
+        link: 'https://files.santonastaso.me',
         featured: true,
         sameTab: true,
-      },
-      {
-        name: 'E-volve Results Automation',
-        description: 'Automates the retrieval and export of exam results using Python',
-        link: 'https://github.com/snts42/evolve-results-automation',
-      },
-      {
-        name: 'Automated Facial Emotion Recognition',
-        description: 'Deep learning pipeline benchmarked for robustness to image blur',
-        link: '/Santonastaso_MSc_Dissertation_Facial_Emotion_Recognition.pdf',
-      },
-      {
-        name: 'Portfolio Website',
-        description: 'Responsive portfolio site built with GatsbyJS, React, and TailwindCSS',
-        link: 'https://github.com/snts42/santonastaso.codes',
       },
     ],
     experience: [
       {
-        name: 'National Careers Service',
+        name: 'Intech Centre (NCS Partner)',
         description: 'Software Developer, Jun 2024 - Present',
         link: 'https://nationalcareers.service.gov.uk/',
       },
       {
         name: 'Queen Mary University of London',
-        description: 'Lab Demonstrator, Oct 2023 - Apr 2024',
+        description: 'Lab Demonstrator, Sep 2023 - Apr 2024',
         link: 'https://www.qmul.ac.uk/',
       },
     ],
     skills: [
       {
         name: 'Languages & Tools',
-        description: 'Python, JavaScript, Java, SQL, Git',
+        description: 'Python, TypeScript, JavaScript, PostgreSQL, Git',
       },
       {
         name: 'Backend & APIs',
-        description: 'FastAPI, REST, Selenium, OpenPyXL, Pandas, Email Automation',
+        description: 'FastAPI, REST APIs, Selenium, Pandas, OpenPyXL, Supabase',
       },
       {
         name: 'Frontend & Web',
-        description: 'React, Gatsby, HTML, CSS, TailwindCSS',
+        description: 'React, Gatsby, TailwindCSS, HTML, CSS',
       },
       {
         name: 'Cloud & Infrastructure',
-        description: 'AWS, Terraform, GitHub Actions, Docker, CI/CD',
+        description: 'AWS, Terraform, Docker, GitHub Actions, CI/CD',
       },
     ],
     certifications: [
       {
-        name: 'AWS Certified Cloud Practitioner',
+        name: 'AWS Certified Solutions Architect (SAA-C03)',
         description: 'In progress',
-        link: 'https://aws.amazon.com/certification/certified-cloud-practitioner/',
+        link: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/',
+      },
+      {
+        name: 'AWS Certified Cloud Practitioner (CLF-C02)',
+        description: 'Mar 2026',
+        link: 'https://www.credly.com/badges/a67cce3e-4833-4682-8e9e-314454333667/public_url',
       },
       {
         name: 'GitHub Foundations Certification',
         description: 'Jun 2025',
-        link: 'https://www.credly.com/badges/a118c3e7-f2b4-4da2-91d4-60750ff091db/linked_in?t=sy0qai', 
-      },
-      {
-        name: 'Scrum Fundamentals Certified',
-        description: 'Jun 2025',
-        link: 'https://www.scrumstudy.com/certification/verify?type=SFC&number=1085847', 
+        link: 'https://www.credly.com/badges/a118c3e7-f2b4-4da2-91d4-60750ff091db/linked_in?t=sy0qai',
       },
     ],
   },
@@ -139,8 +135,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: `https://santonastaso.codes`,
-        sitemap: `https://santonastaso.codes/sitemap-index.xml`,
+        host: `https://santonastaso.me`,
+        sitemap: `https://santonastaso.me/sitemap-index.xml`,
         policy: [
           {
             userAgent: `*`,
@@ -148,19 +144,6 @@ module.exports = {
             disallow: [`/404/`],
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          "G-2DED0V7CD4", // Google Analytics 4 property ID
-        ],
-        pluginConfig: {
-          head: false,
-          respectDNT: true,
-          delayOnRouteUpdate: 0,
-        },
       },
     },
     {

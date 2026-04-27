@@ -76,7 +76,6 @@ const Seo = ({ title, description, pathname, keywords, image }) => {
     "sameAs": [
       metadata.github,
       metadata.linkedin,
-      metadata.siteUrl
     ],
     "worksFor": {
       "@type": "Organization",

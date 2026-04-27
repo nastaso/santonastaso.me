@@ -1,6 +1,6 @@
 # Alex Santonastaso – Developer Portfolio
 
-[![Live site](https://img.shields.io/badge/Live-Demo-blue)](https://santonastaso.codes/)
+[![Live site](https://img.shields.io/badge/Live-Demo-blue)](https://santonastaso.me/)
 
 A modern personal portfolio built with GatsbyJS, React, and TailwindCSS.
 
@@ -27,7 +27,7 @@ A modern personal portfolio built with GatsbyJS, React, and TailwindCSS.
 
 ## Customisation & Usage
 
-To reuse or adapt this portfolio for yourself, see full instructions in the [template repository](https://github.com/snts42/gatsby-portfolio-template).
+To reuse or adapt this portfolio for yourself, see full instructions in the [template repository](https://github.com/nastaso/gatsby-portfolio-template).
 
 ---
 

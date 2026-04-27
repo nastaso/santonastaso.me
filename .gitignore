@@ -65,6 +65,9 @@ typings/
 .cache/
 public
 
+# CV master (docx) - never publish, only the rendered PDF is served
+static/*.docx
+
 # Mac files
 .DS_Store
 
